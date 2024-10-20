@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ComposeCodeLab</string>
+    <string name="placeholder_search">Search…</string>
+    <string name="ab1_inversions">Inversions</string>
+    <string name="align_your_body">Align Your Body</string>
+    <string name="favorite_collections">Favourite</string>
+    <string name="bottom_navigation_home">Home\n</string>
+    <string name="bottom_navigation_profile">Profile\n</string>
+</resources>
