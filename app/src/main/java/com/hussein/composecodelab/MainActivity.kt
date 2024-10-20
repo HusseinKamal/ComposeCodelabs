@@ -25,15 +25,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeCodeLabTheme {
 
-              /*  //Codelab1
+                //Codelab1
               Scaffold(
                     bottomBar = { SootheBottomNavigation() }
                 ) { padding ->
                     HomeScreen(Modifier.padding(padding))
-                }*/
+                }
 
                 //Codelab2
-                Text(text = "Hello" , color = Color(0xFFE91E63))
+                //Text(text = "Hello" , color = Color(0xFFE91E63))
             }
         }
     }
