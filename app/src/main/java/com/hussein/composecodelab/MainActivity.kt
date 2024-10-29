@@ -16,6 +16,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.hussein.composecodelab.codelab1.HomeScreen
 import com.hussein.composecodelab.codelab1.SootheBottomNavigation
+import com.hussein.composecodelab.codelab2.AnimateVisibleCompose
+import com.hussein.composecodelab.codelab2.ClickableMessage
+import com.hussein.composecodelab.codelab2.MessageData
+import com.hussein.composecodelab.codelab2.PulsatingCircle
+import com.hussein.composecodelab.codelab2.SurveyTopProgress
+import com.hussein.composecodelab.codelab2.animatedImageCircle
+import com.hussein.composecodelab.codelab4.ImageCompose
+import com.hussein.composecodelab.codelab4.LayoutModifierExample
 import com.hussein.composecodelab.ui.theme.ComposeCodeLabTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,14 +34,25 @@ class MainActivity : ComponentActivity() {
             ComposeCodeLabTheme {
 
                 //Codelab1
-              Scaffold(
+             /* Scaffold(
                     bottomBar = { SootheBottomNavigation() }
                 ) { padding ->
                     HomeScreen(Modifier.padding(padding))
-                }
+                }*/
 
                 //Codelab2
                 //Text(text = "Hello" , color = Color(0xFFE91E63))
+
+                //Codelab3
+                //ClickableMessage(MessageData(author = "Hussein", body = "Hello Compose", time = "12:00"))
+                //SurveyTopProgress(5,10)
+                //PulsatingCircle()
+                //animatedImageCircle()
+                //AnimateVisibleCompose()
+
+                //Codelab4
+                //LayoutModifierExample()
+                ImageCompose()
             }
         }
     }

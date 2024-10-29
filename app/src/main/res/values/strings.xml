@@ -6,4 +6,5 @@
     <string name="favorite_collections">Favourite</string>
     <string name="bottom_navigation_home">Home\n</string>
     <string name="bottom_navigation_profile">Profile\n</string>
+    <string name="edit_message">Edit Address</string>
 </resources>
