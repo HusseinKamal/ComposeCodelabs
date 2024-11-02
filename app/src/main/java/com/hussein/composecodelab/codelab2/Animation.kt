@@ -87,7 +87,7 @@ fun ClickableMessage(message:MessageData)
                 showMessage = !showMessage
             })
         AnimatedVisibility(visible = showMessage) {
-            Text(text = message.time)
+            Text(text = message.author)
         }
     }
 
