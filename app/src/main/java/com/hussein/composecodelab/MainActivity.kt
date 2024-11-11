@@ -10,11 +10,14 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
@@ -26,6 +29,7 @@ import com.hussein.composecodelab.codelab4.UserIntent
 import com.hussein.composecodelab.codelab4.UserScreen
 import com.hussein.composecodelab.codelab4.UserViewModel
 import com.hussein.composecodelab.codelab4.ValidationState
+import com.hussein.composecodelab.compose.AutoSizeText
 import com.hussein.composecodelab.ui.theme.ComposeCodeLabTheme
 import kotlinx.coroutines.launch
 
@@ -74,11 +78,13 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                 }*/
-                //Email Validation with Value class
+                /*//Email Validation with Value class
                 Box(modifier = Modifier.padding(16.dp).fillMaxSize(), contentAlignment = Alignment.Center) {
                     UserScreen(viewModel)
-                }
-               
+                }*/
+
+                //AutoSizeText
+                AutoSizeText(text = "Asser Hussein", modifier = Modifier.fillMaxWidth().padding(20.dp), textSize = 20.sp, colorText = Color.Red)
             }
         }
     }
