@@ -6,9 +6,9 @@
 4. Make composable functions for all multiple uses composable functions
    
     a)AutoSizeText
-
-   ![Uploading Screen Shot 2024-11-11 at 5.42.21 PM.png…]()
    
+   <img width="371" alt="Screen Shot 2024-11-11 at 5 42 21 PM" src="https://github.com/user-attachments/assets/8c21d20f-e303-4852-8a79-fde008dfa62b">
+
 
 6. 
 
