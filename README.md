@@ -8,8 +8,19 @@
     a)AutoSizeText
    
    <img width="371" alt="Screen Shot 2024-11-11 at 5 42 21 PM" src="https://github.com/user-attachments/assets/8c21d20f-e303-4852-8a79-fde008dfa62b">
+   
+   1)Custom BasicTextField
+
+   2)Custom OutlinedTextField
+
+   3)Circular Image
+
+   4)Lazy Vertical Grid
+   
+   5)Lazy Horizontal Grid
+
+   6)Image with progress loader
 
 
-6. 
 
 # Feel free to contribute on my repo :)

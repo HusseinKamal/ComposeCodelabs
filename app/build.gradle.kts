@@ -67,7 +67,15 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("androidx.compose.ui:ui:1.4.0") // or the latest version
-    implementation("androidx.compose.animation:animation:1.4.0") // or the latest version
+    implementation(libs.ui) // or the latest version
+    implementation(libs.androidx.animation) // or the latest version
+
+    implementation(libs.coil.compose) // Latest stable release
+    // or, for GIFs:
+    implementation(libs.coil.gif)
+    // or, for SVGs:
+    implementation(libs.coil.svg)
+    // or, if you need all of them
+    implementation(libs.coil) // Includes compose, gif and svg
 
 }
