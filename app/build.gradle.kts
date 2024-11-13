@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
+   // alias(libs.plugins.google.ksp)
+    kotlin("kapt") // The kapt plugin
+
 }
 
 android {
@@ -67,7 +71,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(libs.ui) // or the latest version
     implementation(libs.androidx.animation) // or the latest version
 
     implementation(libs.coil.compose) // Latest stable release
@@ -77,5 +80,40 @@ dependencies {
     implementation(libs.coil.svg)
     // or, if you need all of them
     implementation(libs.coil) // Includes compose, gif and svg
+
+    implementation(libs.androidx.paging.compose) // Or latest version
+    implementation(libs.accompanist.swiperefresh) // Or latest version
+
+    // For serialization
+    implementation(libs.kotlinx.serialization.json) // Or latest version
+
+    // ForParcelize
+    implementation(libs.androidx.ui.v120) // Check if there is new version
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.koin.android.v343) // Replace with your Koin version
+    implementation(libs.koin.androidx.compose) // For Compose integration (if using Compose)
+    // Kotlin coroutines (if you're using suspend functions in your DAO)
+    implementation(libs.kotlinx.coroutines.android)
+
+
+    // Optional: Lifecycle components for observing LiveData (if needed)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    //RoomDB
+    implementation(libs.androidx.room.runtime)
+    annotationProcessor(libs.androidx.room.compiler)
+
+    // To use Kotlin annotation processing tool (kapt)
+    kapt(libs.androidx.room.compiler)
+    // To use Kotlin Symbol Processing (KSP)
+    //ksp(libs.androidx.room.compiler)
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation(libs.androidx.room.ktx)
+
+    // optional - Test helpers
+    testImplementation(libs.androidx.room.testing)
+    // optional - Paging 3 Integration
+    implementation(libs.androidx.room.paging)
 
 }

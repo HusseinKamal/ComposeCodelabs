@@ -33,6 +33,19 @@
 
    <img width="371" alt="ButtonWithLoader" src="https://github.com/user-attachments/assets/b050993f-10b5-4cba-b18d-98348bd8b1c7">
 
+   7)LazyColumn with Multiple Views
+
+   8)LazyColumn with Images
+
+   9)Best practices Swipe Refresh
+
+   10)Carousel animation
+
+   11)Multiple languages
+
+   12)RoomDB with Koin dependency injection
+
+
 
 
 

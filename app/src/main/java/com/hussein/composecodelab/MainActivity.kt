@@ -13,7 +13,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.material3.OutlinedTextField
@@ -27,11 +29,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import coil.compose.AsyncImage
 import com.hussein.composecodelab.codelab2.ClickableMessage
 import com.hussein.composecodelab.codelab2.MessageData
 import com.hussein.composecodelab.codelab3.ImageCompose
@@ -41,13 +46,25 @@ import com.hussein.composecodelab.codelab4.UserScreen
 import com.hussein.composecodelab.codelab4.UserViewModel
 import com.hussein.composecodelab.codelab4.ValidationState
 import com.hussein.composecodelab.compose.AutoSizeText
+import com.hussein.composecodelab.compose.BestPracticeSwipeRefresh
+import com.hussein.composecodelab.compose.CarouselDemo
 import com.hussein.composecodelab.compose.CircleImage
+import com.hussein.composecodelab.compose.CustomLazyColumn
 import com.hussein.composecodelab.compose.CustomLazyHorizontalGrid
 import com.hussein.composecodelab.compose.CustomLazyVerticalGrid
 import com.hussein.composecodelab.compose.CustomOutlinedTextField
+import com.hussein.composecodelab.compose.LazyColumnWithMultipleView
+import com.hussein.composecodelab.compose.LocalizedComposable
+import com.hussein.composecodelab.compose.LocalizedScreen
+import com.hussein.composecodelab.compose.MyScreen
 import com.hussein.composecodelab.compose.RoundedButtonWithProgress
+import com.hussein.composecodelab.compose.RowType
+import com.hussein.composecodelab.compose.SwipeRefreshLazyColumnDemo
 import com.hussein.composecodelab.compose.TextField
 import com.hussein.composecodelab.compose.data
+import com.hussein.composecodelab.compose.items
+import com.hussein.composecodelab.compose.navigationsafetype.NavigationSafeType
+import com.hussein.composecodelab.compose.room.ScreenUser
 import com.hussein.composecodelab.ui.theme.ComposeCodeLabTheme
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -158,8 +175,7 @@ class MainActivity : ComponentActivity() {
                 }*/
 
                 //Image with loader
-                var isLoading by remember { mutableStateOf(false) }
-
+              /*  var isLoading by remember { mutableStateOf(false) }
                 RoundedButtonWithProgress(modifier=Modifier.padding(top = 50.dp).fillMaxWidth(),onClick = {
                     isLoading = true
                     // Delay for demonstration
@@ -169,7 +185,37 @@ class MainActivity : ComponentActivity() {
                     }
 
 
-                }, text = "Click Me", isLoading = isLoading)
+                }, text = "Click Me", isLoading = isLoading)*/
+
+                /*
+                //LazyColumn with multiple views in compose
+                //LazyColumnWithMultipleView(items = items, modifier = Modifier.fillMaxSize().padding(top = 30.dp))
+
+                LazyColumn(modifier = Modifier
+                    .fillMaxSize()
+                    .padding(top = 30.dp)) {
+                    items(data){data ->
+                        AsyncImage(modifier = Modifier.fillMaxWidth().height(200.dp), contentScale = ContentScale.FillWidth , model = data, contentDescription = "Data Image", placeholder = painterResource(
+                            id = R.drawable.ic_launcher_background
+                        ))
+                    }
+                }*/
+
+                //Best practices Swipe Refresh layout
+                //SwipeRefreshLazyColumnDemo()
+                //MyScreen()
+
+                //Carousel animation
+               // CarouselDemo()
+
+                //Multiple languages
+                //LocalizedScreen()
+
+                //Navigation save type
+                //NavigationSafeType()
+
+                //RoomDB with koin
+                ScreenUser()
 
             }
         }
