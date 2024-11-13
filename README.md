@@ -35,16 +35,29 @@
 
    7)LazyColumn with Multiple Views
 
+   <img width="371" alt="LazyColumnMultipleViews" src="https://github.com/user-attachments/assets/79c064cf-eeb9-446c-aeb5-04e6f4ad7195">
+
    8)LazyColumn with Images
+
+   <img width="371" alt="LazyColumnWithImages" src="https://github.com/user-attachments/assets/d1fb15f9-8261-41d7-aef5-cb468bc7e4b1">
 
    9)Best practices Swipe Refresh
 
+   [SwipeRefresh.webm](https://github.com/user-attachments/assets/0aa78053-e6e0-48c5-b6b0-176c4b0e0e72)
+
    10)Carousel animation
+
+   <img width="371" alt="Carousel" src="https://github.com/user-attachments/assets/2eb4c14e-deff-4b12-857d-2d033516619f">
 
    11)Multiple languages
 
-   12)RoomDB with Koin dependency injection
+   12)Navigation Safe null compose
 
+   [NavigationSafeType.webm](https://github.com/user-attachments/assets/c091f3d1-7482-4620-862d-afe5ec41e580)
+
+   13)RoomDB with Koin dependency injection
+
+   [RoomDBWithKoin.webm](https://github.com/user-attachments/assets/b71aff84-f6d7-46cd-872a-635b3488794e)
 
 
 
