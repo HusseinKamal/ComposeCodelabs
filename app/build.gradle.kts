@@ -2,8 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.jetbrains.kotlin.serialization)
-   // alias(libs.plugins.google.ksp)
-    kotlin("kapt") // The kapt plugin
+    alias(libs.plugins.google.ksp)
+    alias(libs.plugins.compose.compiler)
+    //kotlin("kapt") // The kapt plugin
 
 }
 
@@ -104,7 +105,7 @@ dependencies {
     annotationProcessor(libs.androidx.room.compiler)
 
     // To use Kotlin annotation processing tool (kapt)
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
     // To use Kotlin Symbol Processing (KSP)
     //ksp(libs.androidx.room.compiler)
 

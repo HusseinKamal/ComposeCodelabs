@@ -5,7 +5,7 @@ animation = "1.4.0"
 coilCompose = "2.4.0"
 koinAndroid = "3.4.3"
 koinAndroidxCompose = "3.4.6"
-kotlin = "1.9.0"
+kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -20,7 +20,7 @@ navigationCompose = "2.8.3"
 pagingCompose = "3.3.2"
 roomRuntime = "2.6.1"
 uiVersion = "1.2.0"
-kspVersion = "1.8.22-1.0.11"
+kspVersion = "2.0.21-1.0.27"
 
 [libraries]
 accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
@@ -61,4 +61,5 @@ kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serializa
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-#google-ksp = {id = "com.google.devtools.ksp",version.ref="kspVersion"}
+google-ksp = {id = "com.google.devtools.ksp",version.ref="kspVersion"}
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
