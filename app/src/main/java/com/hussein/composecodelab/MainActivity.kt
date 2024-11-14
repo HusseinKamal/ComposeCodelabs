@@ -57,12 +57,14 @@ import com.hussein.composecodelab.compose.LazyColumnWithMultipleView
 import com.hussein.composecodelab.compose.LocalizedComposable
 import com.hussein.composecodelab.compose.LocalizedScreen
 import com.hussein.composecodelab.compose.MyScreen
+import com.hussein.composecodelab.compose.NavigationSplash
 import com.hussein.composecodelab.compose.RoundedButtonWithProgress
 import com.hussein.composecodelab.compose.RowType
 import com.hussein.composecodelab.compose.SwipeRefreshLazyColumnDemo
 import com.hussein.composecodelab.compose.TextField
 import com.hussein.composecodelab.compose.data
 import com.hussein.composecodelab.compose.items
+import com.hussein.composecodelab.compose.navigationbottom.MainScreen
 import com.hussein.composecodelab.compose.navigationsafetype.NavigationSafeType
 import com.hussein.composecodelab.compose.room.ScreenUser
 import com.hussein.composecodelab.ui.theme.ComposeCodeLabTheme
@@ -215,7 +217,13 @@ class MainActivity : ComponentActivity() {
                 //NavigationSafeType()
 
                 //RoomDB with koin
-                ScreenUser()
+                //ScreenUser()
+
+                //Bottom Navigation
+                //MainScreen(count = 2)
+
+                //Animated Splash
+                NavigationSplash()
 
             }
         }

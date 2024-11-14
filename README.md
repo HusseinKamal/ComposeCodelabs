@@ -59,6 +59,9 @@
 
    [RoomDBWithKoin.webm](https://github.com/user-attachments/assets/b71aff84-f6d7-46cd-872a-635b3488794e)
 
+   14)Navigation bottom view with header and cart badger notifications tab
+
+
 
 
 
