@@ -60,8 +60,12 @@
    [RoomDBWithKoin.webm](https://github.com/user-attachments/assets/b71aff84-f6d7-46cd-872a-635b3488794e)
 
    14)Navigation bottom view with header and cart badger notifications tab
+   
+   ![NavigationBottomView](https://github.com/user-attachments/assets/1c7de2f4-c9c3-4122-9674-8cb110d75fe5)
 
+   15)Animated Splash with navigation
 
+   [AnimatedSplash.webm](https://github.com/user-attachments/assets/fa81a721-a4fb-4adb-b164-6f6478b7d953)
 
 
 
