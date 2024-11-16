@@ -68,8 +68,20 @@
    [AnimatedSplash.webm](https://github.com/user-attachments/assets/fa81a721-a4fb-4adb-b164-6f6478b7d953)
 
    16)Login with MVI design pattern
+   
+   [Login.webm](https://github.com/user-attachments/assets/a84b6f40-907c-49a5-9fea-21f674a79e17)
+
+   <img width="368" alt="ErrorLogin" src="https://github.com/user-attachments/assets/efb0fa9e-1cfe-4e19-b020-1a17fe20406d">
 
    17)Register with MVI design pattern
+
+   ![Register](https://github.com/user-attachments/assets/3f13e74c-ac53-4a64-bd9c-f5f524b32148)
+
+   ![RegisterError](https://github.com/user-attachments/assets/43865a50-ef99-4bb1-9076-9494732af769)
+
+   18)Shared Transition
+
+   [SharedTransition.webm](https://github.com/user-attachments/assets/aa2ca8fc-31e0-4829-a8f8-1dbefc18d210)
 
 
 
