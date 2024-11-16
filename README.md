@@ -67,6 +67,10 @@
 
    [AnimatedSplash.webm](https://github.com/user-attachments/assets/fa81a721-a4fb-4adb-b164-6f6478b7d953)
 
+   16)Login with MVI design pattern
+
+   17)Register with MVI design pattern
+
 
 
 # Feel free to contribute on my repo :)

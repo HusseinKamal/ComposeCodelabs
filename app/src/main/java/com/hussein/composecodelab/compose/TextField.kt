@@ -165,6 +165,7 @@ fun CustomOutlinedTextField(modifier: Modifier = Modifier,
                             trailingIcon: @Composable (() -> Unit)? = null,
                             shape: Shape = OutlinedTextFieldDefaults.shape,
                             isError: Boolean = false,
+                            errorMessage : String = "",
                             keyboardType: KeyboardType = KeyboardType.Text,
                             imeAction: ImeAction = ImeAction.Done,
                             keyboardActions: KeyboardActions = KeyboardActions.Default,
@@ -176,17 +177,28 @@ fun CustomOutlinedTextField(modifier: Modifier = Modifier,
         value = textValue,
         onValueChange = { newValue: TextFieldValue -> // Must take TextFieldValue
             textValue = newValue // Update the state
+            onValueChange.invoke(newValue.text) // Update the callback
         },
-        isError = isError,
         shape = shape,
         modifier = modifier,
-        placeholder = { Text(text = placeholder) },
+        placeholder = { Text(placeholder) }, // Show placeholder conditionally
+        isError = isError,
+        supportingText = {
+            if (errorMessage.isNotEmpty()) {
+                Text(
+                    text = errorMessage,
+                    color = MaterialTheme.colorScheme.error,
+                )
+            }
+        },
         leadingIcon = leadingIcon,
         trailingIcon = trailingIcon,
         keyboardOptions = KeyboardOptions(
             keyboardType = keyboardType,
             imeAction = imeAction
         ),
+       // errorMessage = errorMessage,
+        //supportingText = errorMessage?.let { Text(it, color = MaterialTheme.colorScheme.error) },
         keyboardActions = keyboardActions, // Only one keyboardActions parameter
         textStyle = TextStyle(fontSize = 16.sp, fontFamily = fontFamilyName), // Input text size
         visualTransformation = if (isPassword) {

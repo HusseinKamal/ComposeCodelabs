@@ -8,6 +8,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.animation.AnimatedVisibilityScope
+import androidx.compose.animation.ExperimentalSharedTransitionApi
+import androidx.compose.animation.SharedTransitionScope
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -64,9 +67,13 @@ import com.hussein.composecodelab.compose.SwipeRefreshLazyColumnDemo
 import com.hussein.composecodelab.compose.TextField
 import com.hussein.composecodelab.compose.data
 import com.hussein.composecodelab.compose.items
+import com.hussein.composecodelab.compose.login.LoginScreen
 import com.hussein.composecodelab.compose.navigationbottom.MainScreen
 import com.hussein.composecodelab.compose.navigationsafetype.NavigationSafeType
+import com.hussein.composecodelab.compose.register.RegisterScreen
 import com.hussein.composecodelab.compose.room.ScreenUser
+import com.hussein.composecodelab.compose.sharedtransition.SharedBoundsDemo
+import com.hussein.composecodelab.compose.sharedtransition.SharedTransitionElement
 import com.hussein.composecodelab.ui.theme.ComposeCodeLabTheme
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -74,6 +81,7 @@ import kotlinx.coroutines.launch
 class MainActivity : ComponentActivity() {
     private val viewModel: UserViewModel by viewModels()
 
+    @OptIn(ExperimentalSharedTransitionApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -223,7 +231,19 @@ class MainActivity : ComponentActivity() {
                 //MainScreen(count = 2)
 
                 //Animated Splash
-                NavigationSplash()
+                //NavigationSplash()
+
+                //Login
+//                LoginScreen(onLoginSuccess = {
+//                })
+
+                //Register
+                //RegisterScreen(onRegisterSuccess = { })
+
+                //Shared Transition Element
+                //SharedTransitionElement()
+
+                SharedBoundsDemo()
 
             }
         }
