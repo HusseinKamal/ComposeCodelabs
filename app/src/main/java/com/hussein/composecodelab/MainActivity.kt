@@ -64,6 +64,7 @@ import com.hussein.composecodelab.compose.NavigationSplash
 import com.hussein.composecodelab.compose.RoundedButtonWithProgress
 import com.hussein.composecodelab.compose.RowType
 import com.hussein.composecodelab.compose.SwipeRefreshLazyColumnDemo
+import com.hussein.composecodelab.compose.SwipeToDelete
 import com.hussein.composecodelab.compose.TextField
 import com.hussein.composecodelab.compose.data
 import com.hussein.composecodelab.compose.items
@@ -243,7 +244,9 @@ class MainActivity : ComponentActivity() {
                 //Shared Transition Element
                 //SharedTransitionElement()
 
-                SharedBoundsDemo()
+                //SharedBoundsDemo()
+
+                SwipeToDelete()
 
             }
         }
